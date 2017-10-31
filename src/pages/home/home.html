@@ -1,0 +1,23 @@
+<ion-content padding class="{{classe}}">
+
+  <ion-grid justify-content-around>
+
+    <ion-row>
+      <ion-col col-md-12>
+        <div class="title-pessoa">Solicitando acesso na portaria:</div><br>
+        <div class="pessoa">{{nome}}</div>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+
+</ion-content>
+
+<ion-footer padding>
+    <ion-row style="justify-content: flex-end;">
+      <ion-card *ngIf="createdCode" style="width: 10%;">
+        <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+      </ion-card>
+    </ion-row>
+</ion-footer>

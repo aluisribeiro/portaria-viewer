@@ -1,0 +1,31 @@
+page-home {
+
+    ion-content{
+        display: flex;
+    }
+
+    .panico{
+        background: color($colors, danger);
+    }
+
+    .normal{
+        background: color($colors, primary);
+    }
+
+    .title-pessoa{
+        margin-top: 5em;
+        text-align: center;
+        color: #FFECB3;
+        font-size: 3em;
+    }
+
+    .pessoa{
+        text-align: center;
+        color: #FFECB3;
+        font-size: 9em;
+    }
+
+    .footer::before{
+        background: none;
+    }
+}
